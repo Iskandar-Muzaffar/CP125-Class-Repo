@@ -1,6 +1,3 @@
-# Lab 02 Exercise 8: Bouncing Ball Simulation
-# Write your code below:
-
 def calculate_bounce_height(current_height):
     """Calculate next bounce height (80% of current)."""
     # TODO: Implement this function
@@ -13,10 +10,9 @@ def is_ball_stopped(height):
     return height < 1
     
 
-def simulate_bouncing_ball(start_height):
+def calculate_bounce_count(initial_height):
     """
-    Simulate bouncing ball.
-    Returns: (bounce_count, total_distance)
+    Count how many times the ball bounces.
     """
     # TODO: Implement using calculate_bounce_height and is_ball_stopped
     height = start_height
