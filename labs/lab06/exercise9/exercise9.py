@@ -23,4 +23,6 @@ def find_qualified_students(student_records, required_courses):
         if common == completed:
             qualified.append(student_id)
     
+    qualified.sort()
+    
     return qualified
