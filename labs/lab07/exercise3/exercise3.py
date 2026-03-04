@@ -1,5 +1,11 @@
 def compare_prices(store_a, store_b):
     # TODO: Your code here
+    only_a = []
+    a_cheaper = []
+    b_cheaper = []
+
+    
+    
     pass
 
 
