@@ -9,6 +9,8 @@ def show_science_distribution(filename):
     plt.ylabel("Frequency")
     plt.title("Science Score Distribution")
     plt.show()
+    
+    return len(df)
 
 count = show_science_distribution("labs/lab09/data/students.csv")
 print(count)  

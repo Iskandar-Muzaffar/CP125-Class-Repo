@@ -4,10 +4,11 @@ def explore_data(filename):
     df = pd.read_csv(filename)
 
     total_students = len(df)
-    subjects = ['Maths', 'Science','English']
+    subjects = ['Math', 'Science','English']
     math_average = df['Math'].mean()
-    highest_math_student = df.loc[df['Math'].idxmax(), 'Name']
-
+    highest_math = df['Math'].max()
+    highest_math_student = df.loc[df['Math'] == highest_math, 'Name'].values[0]
+                    
     result = {
         'total_students': total_students,
         'subjects': subjects,

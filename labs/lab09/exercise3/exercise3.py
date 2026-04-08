@@ -11,6 +11,8 @@ def show_math_trend(filename):
     plt.title("Math Scores Trends")
     plt.show()
 
-count = show_math_trend("labs/lab09/data/students.csv")
+    return len(df)
 
+
+count = show_math_trend("labs/lab09/data/students.csv")
 print(count)  
